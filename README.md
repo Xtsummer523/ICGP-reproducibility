@@ -47,4 +47,9 @@ The ten-seed Gazebo boundary study includes the retained 30-run summaries and 20
 
 Fig. 1 is an editable vector schematic manually redrawn and adjusted by Tian Xia in draw.io. The editable source and vector export are included for reproducibility.
 
-See `RELEASE_CHECKLIST.md` before depositing the archive.
+## Licences
+
+Code is released under the MIT License. Retained data, documentation,
+manuscript source, and figure source files are released under CC BY 4.0; see
+`LICENSE-DATA.md`. Predictor weights are included for reproducibility and are
+not separately licensed for redistribution.

@@ -5,11 +5,10 @@ Corresponding email: xia.tian.robotics@outlook.com
 
 Archive status
 --------------
-This supplementary archive is supplied for editorial review, peer review, and
-verification. No public open-source or open-data licence has yet been assigned to
-the original code, predictor weights, or archived experimental records. External
-redistribution therefore requires permission from the author unless a later public
-repository record states different terms.
+The code in this repository is released under the MIT License. Retained data,
+documentation, manuscript source, and figure source files are released under
+CC BY 4.0 as described in LICENSE-DATA.md. Predictor weights are included for
+reproducibility but are not separately licensed for redistribution.
 
 Third-party dependencies
 ------------------------
@@ -30,4 +29,3 @@ The RViz and Gazebo captures are authentic system screenshots. Numerical results
 are derived from the supplied CSV records, not from screenshot pixels. The
 ten-seed Gazebo boundary raw logs are not locally available; only their retained
 summary and paired-difference tables are supplied.
-
