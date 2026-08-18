@@ -1,0 +1,33 @@
+Article: ICGP: Intent-Conditioned Neighbor-Response Evaluation for Local Multi-Robot Planning under Observation Noise
+Journal: Journal of Intelligent & Robotic Systems
+Author: Tian Xia
+Corresponding email: xia.tian.robotics@outlook.com
+
+Archive status
+--------------
+This supplementary archive is supplied for editorial review, peer review, and
+verification. No public open-source or open-data licence has yet been assigned to
+the original code, predictor weights, or archived experimental records. External
+redistribution therefore requires permission from the author unless a later public
+repository record states different terms.
+
+Third-party dependencies
+------------------------
+The archive does not redistribute Python, NumPy, pandas, PyTorch, Matplotlib,
+ROS 2, Gazebo, RViz, or their transitive dependencies. Each dependency remains
+subject to its own licence and installation terms. Exact package versions may vary
+by platform; the release verification used the locally installed environment.
+
+Predictor weights
+-----------------
+The three local predictor-weight files are included to support review and
+verification of the reported experiments. Their SHA-256 digests are recorded in
+SHA256SUMS.csv. Public redistribution is not granted by this review archive.
+
+Evidence boundaries
+-------------------
+The RViz and Gazebo captures are authentic system screenshots. Numerical results
+are derived from the supplied CSV records, not from screenshot pixels. The
+ten-seed Gazebo boundary raw logs are not locally available; only their retained
+summary and paired-difference tables are supplied.
+

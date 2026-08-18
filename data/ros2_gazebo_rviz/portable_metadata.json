@@ -1,0 +1,8 @@
+﻿{
+    "journal":  "Journal of Intelligent \u0026 Robotic Systems",
+    "boundary":  "This diagnostic is separate from the ten-seed eight-robot boundary summary",
+    "image_source":  "Authentic RViz and Gazebo GUI captures; the numerical metrics are not image-derived",
+    "article":  "ICGP: Intent-Conditioned Neighbor-Response Evaluation for Local Multi-Robot Planning under Observation Noise",
+    "diagnostic":  "Four-robot, single-seed ROS 2/Gazebo/RViz system-integration diagnostic",
+    "metric_source":  "Synchronized CSV logs and the included ROS metric-export code"
+}

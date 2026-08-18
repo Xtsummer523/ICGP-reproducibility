@@ -1,0 +1,6 @@
+time_s,robot_id,event_type,reason,min_distance_m,scale,enable_motion
+11.600000,ALL,stop,stale_pose,inf,0.000000,True
+11.600000,ALL,stop,stale_pose,inf,0.000000,True
+11.700000,ALL,stop,stale_pose,inf,0.000000,True
+11.800000,ALL,stop,stale_pose,inf,0.000000,True
+11.900000,ALL,stop,stale_pose,inf,0.000000,True

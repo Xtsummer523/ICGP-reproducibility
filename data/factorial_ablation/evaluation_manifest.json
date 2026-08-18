@@ -1,0 +1,132 @@
+{
+  "purpose": "Gaussian observation-noise evaluation of a fully crossed architecture-by-candidate-conditioning model set.",
+  "scenarios": [
+    "corridor",
+    "narrow_gate",
+    "merge_bottleneck",
+    "four_way_stop"
+  ],
+  "robots": [
+    4,
+    8
+  ],
+  "environment_seed_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "noise_levels": [
+    "clean",
+    "low",
+    "medium",
+    "high"
+  ],
+  "conditions": [
+    {
+      "label": "plain_candidate",
+      "architecture": "plain",
+      "candidate_conditioned": true,
+      "feature_key": "x_intent",
+      "planner_method": "icgp_rvo_mpc"
+    },
+    {
+      "label": "plain_zero",
+      "architecture": "plain",
+      "candidate_conditioned": false,
+      "feature_key": "x_passive",
+      "planner_method": "passive_rvo_mpc"
+    },
+    {
+      "label": "residual_candidate",
+      "architecture": "residual",
+      "candidate_conditioned": true,
+      "feature_key": "x_intent",
+      "planner_method": "icgp_rvo_mpc"
+    },
+    {
+      "label": "residual_zero",
+      "architecture": "residual",
+      "candidate_conditioned": false,
+      "feature_key": "x_passive",
+      "planner_method": "residual_passive_rvo_mpc"
+    }
+  ],
+  "factorial_contrasts": [
+    [
+      "plain_conditioning",
+      "plain_candidate",
+      "plain_zero"
+    ],
+    [
+      "residual_conditioning",
+      "residual_candidate",
+      "residual_zero"
+    ],
+    [
+      "candidate_architecture",
+      "residual_candidate",
+      "plain_candidate"
+    ],
+    [
+      "zero_architecture",
+      "residual_zero",
+      "plain_zero"
+    ]
+  ],
+  "evaluation_sim_config": {
+    "dt": 0.12,
+    "horizon": 8,
+    "max_steps": 220,
+    "robot_radius": 0.22,
+    "safety_margin": 0.08,
+    "max_speed": 1.15,
+    "max_accel": 1.8,
+    "goal_tolerance": 0.38,
+    "neighbor_limit": 4,
+    "collision_weight": 7.5,
+    "control_weight": 0.05,
+    "smooth_weight": 0.025,
+    "safety_filter_gain": 2.0
+  },
+  "completion": {
+    "expected_rows": 3840,
+    "observed_rows": 3840,
+    "missing_rows": 0,
+    "is_complete": true
+  },
+  "outputs": {
+    "raw_results": "data/factorial_ablation/factorial_results.csv",
+    "method_summary": "data/factorial_ablation/factorial_method_summary.csv",
+    "paired_deltas": "data/factorial_ablation/factorial_paired_deltas.csv",
+    "paired_summary": "data/factorial_ablation/factorial_paired_summary.csv",
+    "interaction_deltas": "data/factorial_ablation/factorial_interaction_deltas.csv",
+    "interaction_summary": "data/factorial_ablation/factorial_interaction_summary.csv"
+  }
+}

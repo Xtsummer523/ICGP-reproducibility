@@ -1,0 +1,5 @@
+numpy
+opencv-python
+Pillow
+PyQt5
+python-docx

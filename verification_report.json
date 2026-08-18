@@ -1,0 +1,541 @@
+{
+  "archive": "ICGP JIROS Online Resource 1",
+  "csv_design_checks": [
+    {
+      "path": "data/legacy_main/selected_episode_results.csv",
+      "exists": true,
+      "expected_rows": 960,
+      "observed_rows": 960,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method": {
+          "expected": [
+            "constant_velocity_mpc",
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "observed": [
+            "constant_velocity_mpc",
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/gaussian_observation_study/episode_results.csv",
+      "exists": true,
+      "expected_rows": 3840,
+      "observed_rows": 3840,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method": {
+          "expected": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "observed": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "passed": true
+        },
+        "scenario": {
+          "expected": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "observed": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "passed": true
+        },
+        "noise_level": {
+          "expected": [
+            "clean",
+            "high",
+            "low",
+            "medium"
+          ],
+          "observed": [
+            "clean",
+            "high",
+            "low",
+            "medium"
+          ],
+          "passed": true
+        },
+        "robots": {
+          "expected": [
+            "4",
+            "8"
+          ],
+          "observed": [
+            "4",
+            "8"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/autoregressive_observation_study/episode_results.csv",
+      "exists": true,
+      "expected_rows": 1920,
+      "observed_rows": 1920,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method": {
+          "expected": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "observed": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "passed": true
+        },
+        "scenario": {
+          "expected": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "observed": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "passed": true
+        },
+        "noise_level": {
+          "expected": [
+            "high",
+            "low"
+          ],
+          "observed": [
+            "high",
+            "low"
+          ],
+          "passed": true
+        },
+        "robots": {
+          "expected": [
+            "4",
+            "8"
+          ],
+          "observed": [
+            "4",
+            "8"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/short_dropout_probability_005/episode_results.csv",
+      "exists": true,
+      "expected_rows": 1920,
+      "observed_rows": 1920,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method": {
+          "expected": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "observed": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "passed": true
+        },
+        "scenario": {
+          "expected": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "observed": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "passed": true
+        },
+        "noise_level": {
+          "expected": [
+            "high",
+            "low"
+          ],
+          "observed": [
+            "high",
+            "low"
+          ],
+          "passed": true
+        },
+        "robots": {
+          "expected": [
+            "4",
+            "8"
+          ],
+          "observed": [
+            "4",
+            "8"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/short_dropout_probability_010/episode_results.csv",
+      "exists": true,
+      "expected_rows": 1920,
+      "observed_rows": 1920,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method": {
+          "expected": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "observed": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc",
+            "rvo_reactive"
+          ],
+          "passed": true
+        },
+        "scenario": {
+          "expected": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "observed": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "passed": true
+        },
+        "noise_level": {
+          "expected": [
+            "high",
+            "low"
+          ],
+          "observed": [
+            "high",
+            "low"
+          ],
+          "passed": true
+        },
+        "robots": {
+          "expected": [
+            "4",
+            "8"
+          ],
+          "observed": [
+            "4",
+            "8"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/prediction_quality/case_summary.csv",
+      "exists": true,
+      "expected_rows": 1440,
+      "observed_rows": 1440,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method": {
+          "expected": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc"
+          ],
+          "observed": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc"
+          ],
+          "passed": true
+        },
+        "scenario": {
+          "expected": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "observed": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "passed": true
+        },
+        "noise_level": {
+          "expected": [
+            "clean",
+            "high"
+          ],
+          "observed": [
+            "clean",
+            "high"
+          ],
+          "passed": true
+        },
+        "robots": {
+          "expected": [
+            "4",
+            "8"
+          ],
+          "observed": [
+            "4",
+            "8"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/gazebo_boundary/eight_robot_seed_results.csv",
+      "exists": true,
+      "expected_rows": 30,
+      "observed_rows": 30,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method_key": {
+          "expected": [
+            "icgp",
+            "passive",
+            "residual_passive"
+          ],
+          "observed": [
+            "icgp",
+            "passive",
+            "residual_passive"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/gazebo_boundary/eight_robot_paired_differences.csv",
+      "exists": true,
+      "expected_rows": 20,
+      "observed_rows": 20,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "baseline": {
+          "expected": [
+            "Passive",
+            "Residual-passive"
+          ],
+          "observed": [
+            "Passive",
+            "Residual-passive"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/ros2_gazebo_rviz/single_seed_method_summary.csv",
+      "exists": true,
+      "expected_rows": 3,
+      "observed_rows": 3,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method": {
+          "expected": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc"
+          ],
+          "observed": [
+            "icgp_rvo_mpc",
+            "passive_rvo_mpc",
+            "residual_passive_rvo_mpc"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "path": "data/factorial_ablation/factorial_results.csv",
+      "exists": true,
+      "expected_rows": 3840,
+      "observed_rows": 3840,
+      "duplicate_keys": 0,
+      "value_checks": {
+        "method": {
+          "expected": [
+            "plain_candidate",
+            "plain_zero",
+            "residual_candidate",
+            "residual_zero"
+          ],
+          "observed": [
+            "plain_candidate",
+            "plain_zero",
+            "residual_candidate",
+            "residual_zero"
+          ],
+          "passed": true
+        },
+        "scenario": {
+          "expected": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "observed": [
+            "corridor",
+            "four_way_stop",
+            "merge_bottleneck",
+            "narrow_gate"
+          ],
+          "passed": true
+        },
+        "noise_level": {
+          "expected": [
+            "clean",
+            "high",
+            "low",
+            "medium"
+          ],
+          "observed": [
+            "clean",
+            "high",
+            "low",
+            "medium"
+          ],
+          "passed": true
+        },
+        "robots": {
+          "expected": [
+            "4",
+            "8"
+          ],
+          "observed": [
+            "4",
+            "8"
+          ],
+          "passed": true
+        }
+      },
+      "passed": true
+    }
+  ],
+  "nonempty_log_checks": [
+    {
+      "path": "data/ros2_gazebo_rviz/icgp_states.csv",
+      "exists": true,
+      "rows": 6448,
+      "passed": true
+    },
+    {
+      "path": "data/ros2_gazebo_rviz/icgp_pairwise_distances.csv",
+      "exists": true,
+      "rows": 9672,
+      "passed": true
+    },
+    {
+      "path": "data/ros2_gazebo_rviz/passive_states.csv",
+      "exists": true,
+      "rows": 6496,
+      "passed": true
+    },
+    {
+      "path": "data/ros2_gazebo_rviz/passive_pairwise_distances.csv",
+      "exists": true,
+      "rows": 9744,
+      "passed": true
+    },
+    {
+      "path": "data/ros2_gazebo_rviz/residual_passive_states.csv",
+      "exists": true,
+      "rows": 6288,
+      "passed": true
+    },
+    {
+      "path": "data/ros2_gazebo_rviz/residual_passive_pairwise_distances.csv",
+      "exists": true,
+      "rows": 9432,
+      "passed": true
+    },
+    {
+      "path": "data/ros2_gazebo_rviz/progress_timeseries.csv",
+      "exists": true,
+      "rows": 4808,
+      "passed": true
+    },
+    {
+      "path": "data/ros2_gazebo_rviz/minimum_distance_timeseries.csv",
+      "exists": true,
+      "rows": 4808,
+      "passed": true
+    }
+  ],
+  "hash_check": {
+    "manifest": "SHA256SUMS.csv",
+    "exists": true,
+    "entries": 128,
+    "missing_files": [],
+    "size_mismatches": [],
+    "hash_mismatches": [],
+    "unlisted_files": [],
+    "stale_entries": [],
+    "passed": true
+  },
+  "filename_check": {
+    "version_like_names": [],
+    "passed": true
+  },
+  "passed": true
+}

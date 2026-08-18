@@ -1,0 +1,66 @@
+{
+  "purpose": "Fully crossed plain/residual architecture by candidate-conditioning experiment.",
+  "training_seed": 7,
+  "training_sim_config": {
+    "dt": 0.12,
+    "horizon": 8,
+    "max_steps": 120,
+    "robot_radius": 0.22,
+    "safety_margin": 0.08,
+    "max_speed": 1.15,
+    "max_accel": 1.8,
+    "goal_tolerance": 0.38,
+    "neighbor_limit": 4,
+    "collision_weight": 7.5,
+    "control_weight": 0.05,
+    "smooth_weight": 0.025,
+    "safety_filter_gain": 2.0
+  },
+  "training_config": {
+    "seed": 7,
+    "train_samples": 2600,
+    "val_samples": 600,
+    "test_samples": 600,
+    "batch_size": 256,
+    "epochs": 12,
+    "lr": 0.001,
+    "hidden_dim": 96,
+    "dropout": 0.05
+  },
+  "conditions": [
+    {
+      "label": "plain_candidate",
+      "architecture": "plain",
+      "candidate_conditioned": true,
+      "feature_key": "x_intent",
+      "planner_method": "icgp_rvo_mpc"
+    },
+    {
+      "label": "plain_zero",
+      "architecture": "plain",
+      "candidate_conditioned": false,
+      "feature_key": "x_passive",
+      "planner_method": "passive_rvo_mpc"
+    },
+    {
+      "label": "residual_candidate",
+      "architecture": "residual",
+      "candidate_conditioned": true,
+      "feature_key": "x_intent",
+      "planner_method": "icgp_rvo_mpc"
+    },
+    {
+      "label": "residual_zero",
+      "architecture": "residual",
+      "candidate_conditioned": false,
+      "feature_key": "x_passive",
+      "planner_method": "residual_passive_rvo_mpc"
+    }
+  ],
+  "dataset": {
+    "path": "data/factorial_ablation/training_dataset.npz",
+    "sha256": "9cb9f32df1f30aa9721ae503f6518178a012896ccc26a43a15a8be1101805754",
+    "samples": 3800
+  },
+  "invariant": "Every condition uses identical generated states, targets, initialization seed, DataLoader permutation seed, optimizer, loss, clipping rule, batch size, and epoch count."
+}

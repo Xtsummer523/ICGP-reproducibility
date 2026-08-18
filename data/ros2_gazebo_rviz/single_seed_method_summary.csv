@@ -1,0 +1,4 @@
+label,method,scenario,robots,progress_ratio,final_goal_distance_m,collision,safety_violation,min_distance_m,deadlock,mean_speed_mps,max_speed_mps,rosbag_ready,visual_artifact_count
+ICGP+RVO,icgp_rvo_mpc,merge_bottleneck,4,0.341303,2.985997,0,0,0.838611,0,0.040664,0.299724,True,2
+Passive+RVO,passive_rvo_mpc,merge_bottleneck,4,0.722103,1.259761,0,0,0.857956,1,0.084733,0.299724,True,2
+Residual-passive+RVO,residual_passive_rvo_mpc,merge_bottleneck,4,0.257085,3.367778,0,0,0.850577,1,0.034616,0.300416,True,2

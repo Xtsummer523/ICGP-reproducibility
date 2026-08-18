@@ -1,0 +1,28 @@
+{
+  "sim": {
+    "dt": 0.12,
+    "horizon": 8,
+    "max_steps": 120,
+    "robot_radius": 0.22,
+    "safety_margin": 0.08,
+    "max_speed": 1.15,
+    "max_accel": 1.8,
+    "goal_tolerance": 0.38,
+    "neighbor_limit": 4,
+    "collision_weight": 7.5,
+    "control_weight": 0.05,
+    "smooth_weight": 0.025,
+    "safety_filter_gain": 2.0
+  },
+  "train": {
+    "seed": 7,
+    "train_samples": 2600,
+    "val_samples": 600,
+    "test_samples": 600,
+    "batch_size": 256,
+    "epochs": 12,
+    "lr": 0.001,
+    "hidden_dim": 96,
+    "dropout": 0.05
+  }
+}

@@ -1,0 +1,39 @@
+﻿{
+    "autoregressive_observation":  {
+                                       "rho":  0.85,
+                                       "rows":  1920,
+                                       "transformation":  "Retained episode records, method summaries, paired differences, and paired summaries copied without aggregation changes."
+                                   },
+    "gazebo_boundary":  {
+                            "paired_rows":  20,
+                            "transformation":  "Internal run identifiers and path columns removed; numeric result columns retained.",
+                            "rows":  30,
+                            "design":  "Ten seeds, eight robots, three methods"
+                        },
+    "prediction_quality":  {
+                               "transformation":  "Retained case-level diagnostic and supplied summaries copied without aggregation changes.",
+                               "rows":  1440
+                           },
+    "legacy_clean":  {
+                         "selection":  "four constrained scenarios, robot counts 4 and 8, four methods, matched seeds",
+                         "transformation":  "Rows filtered by explicit scenario, robot-count, and method keys; no numeric columns recomputed.",
+                         "retained_rows":  2160,
+                         "selected_rows":  960
+                     },
+    "gaussian_observation":  {
+                                 "paired_rows":  20160,
+                                 "summary_rows":  84,
+                                 "rows":  3840,
+                                 "transformation":  "Retained episode records and supplied paired summaries copied without aggregation changes."
+                             },
+    "short_dropout":  {
+                          "maximum_duration":  3,
+                          "transformation":  "Retained episode records, method summaries, paired differences, and paired summaries copied without aggregation changes.",
+                          "probability_005_rows":  1920,
+                          "probability_010_rows":  1920
+                      },
+    "ros2_gazebo_rviz":  {
+                             "transformation":  "Descriptive filenames and portable metadata added; synchronized numerical logs retained.",
+                             "design":  "Four robots, one retained system-integration diagnostic"
+                         }
+}

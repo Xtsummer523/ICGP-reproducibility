@@ -1,0 +1,8 @@
+﻿Fig. 8 source trace
+===================
+The retained Fig. 8 PDF is the system diagnostic composite supplied with the
+ROS 2 evidence archive. This folder supplies the metric definitions, CSV
+exporter, trajectory renderer, RViz marker node, RViz configuration, and the
+raw synchronized logs used to interpret its panels. The single historical
+compositing command was not retained as an independent source file, so this
+package does not claim one-command pixel-identical regeneration of the PDF.
