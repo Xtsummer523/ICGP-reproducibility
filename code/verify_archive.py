@@ -139,6 +139,7 @@ def check_hashes() -> dict:
         if path.is_file()
         and path not in {HASH_LIST, REPORT_FILE}
         and "__pycache__" not in path.parts
+        and ".git" not in path.parts
     }
     result["unlisted_files"] = sorted(actual - declared)
     result["stale_entries"] = sorted(declared - actual)
