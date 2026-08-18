@@ -145,7 +145,7 @@ The archived training inputs come from the local deterministic simulator generat
 
 The planner is local and finite-horizon. It has no explicit priority assignment, reservation, communication schedule, or right-of-way variable, and it does not estimate a posterior over calibrated sensor states. The simulator's true state is used for outcome accounting, collision checks, and goals. The sensitivity test perturbs only the observation supplied to the decentralized controller. A lower simulated safety-violation rate is therefore not a formal safety certificate, and a higher completion rate is not evidence of deployment readiness.
 
-Large-language-model tools were used for manuscript linguistic polishing, structural organization, and auxiliary drafting of the Fig.~\ref{fig:concept} schematic. Tian Xia manually edited and adjusted the schematic and is responsible for its scientific accuracy and final content. All theoretical derivations, simulation data, statistical analyses, and figure content were reviewed, edited, and verified by Tian Xia. No AI tool qualifies as an author.
+Large-language-model tools were used for manuscript linguistic polishing, structural organization, and conceptual planning of the Fig.~\ref{fig:concept} schematic. Tian Xia manually redrew and adjusted the schematic in draw.io and is responsible for its scientific accuracy and final content. All theoretical derivations, simulation data, statistical analyses, and figure content were reviewed, edited, and verified by Tian Xia. No AI tool qualifies as an author.
 
 \subsection{Formal safety analysis under deterministic conditions}
 \label{sec:formal-safety}
@@ -583,7 +583,7 @@ Gaussian, AR(1), and dropout schedules vary controller input in controlled ways;
 
 \subsection{Reproducibility and next test}
 
-Each estimate links to paired records, derived summaries, evaluation code, model weights, and integrity checks. The archive contains 3,840 Gaussian records, 5,760 temporal-stress records, 1,440 prediction-diagnostic rows, and the 3,840-record factorial corpus. These materials support internal recomputation. Public release still requires a persistent access route, reuse licence, and verified redistribution permissions.
+Each estimate links to paired records, derived summaries, evaluation code, model weights, and integrity checks. The public archive contains 3,840 Gaussian records, 5,760 temporal-stress records, 1,440 prediction-diagnostic rows, and the 3,840-record factorial corpus. These materials support internal recomputation and are available at \url{https://github.com/Xtsummer523/ICGP-reproducibility} (Release v1.0.1), subject to the repository licences and the stated predictor-weight restriction.
 
 The next experiment should synchronize estimated and ground-truth tracks, calibrate error by range and occlusion, retain candidate ranks and pre/post-RVO commands, and measure end-to-end timing. A symmetric merge also needs an explicit priority or deadlock-resolution layer. These records would separate forecast, ranking, projection, and coordination effects that remain confounded here.
 \section{Conclusion}
@@ -721,9 +721,9 @@ scenario seed and perturbation schedule.
 
 \textbf{Author contributions.} Tian Xia is the sole author and is responsible for all contributions to the study and manuscript.
 
-\textbf{Data availability.} The supplementary package contains the formal results, stress-test records, prediction diagnostics, factorial ablation, and ten-seed Gazebo archive. The records, manifests, and integrity checks support internal recomputation; a persistent repository record, access route, and reuse licence must be added before submission.
+\textbf{Data availability.} The retained experimental records, manifests, integrity checks, code, manuscript source, and figure source supporting the findings are available at \url{https://github.com/Xtsummer523/ICGP-reproducibility} (Release v1.0.1). Code is released under the MIT License; retained data, documentation, manuscript source, and figure source files are released under CC BY 4.0.
 
-\textbf{Code and materials availability.} The revision package includes the simulator, evaluation and statistical code, figure sources, and predictor weights with integrity hashes. Redistribution remains subject to licence verification.
+\textbf{Code and materials availability.} The repository provides the simulator, evaluation and statistical code, figure sources, and predictor weights with integrity hashes. Predictor weights are provided for reproducibility and are not separately licensed for redistribution.
 
 \textbf{Ethics approval, consent to participate, consent to publish, and animal welfare.} This study uses simulated multi-robot trajectories only; no human participants, personal data, animals, biological materials, or identifiable images were involved.
 
