@@ -10,6 +10,9 @@
 \begin{document}
 
 \hypersetup{
+  urlcolor=blue,
+  linkcolor=black,
+  citecolor=black,
   pdftitle={ICGP: Intent-Conditioned Neighbor-Response Evaluation for Local Multi-Robot Planning under Observation Noise},
   pdfauthor={Tian Xia},
   pdfkeywords={multi-robot systems; local motion planning; interactive prediction; reciprocal collision avoidance; observation-noise sensitivity; simulation reproducibility}
@@ -269,7 +272,7 @@ The primary contrast is ICGP+RVO minus Passive+RVO within a matched case. Positi
 
 At each noise level, the estimand is the mean paired difference over 240 matched cases. A paired analysis is appropriate because the map, robot count, episode seed, scenario realization, and noise schedule are shared. It removes part of the variation due to scenario difficulty and makes the interval a within-case comparison.
 
-For each method and noise level, we report the mean and a percentile bootstrap 95\% confidence interval over 240 method records. For each paired metric, the confidence interval is computed from 10,000 resamples of the 240 paired differences, following the nonparametric resampling logic described by Efron and Tibshirani \cite{efron1993}. The two-sided paired sign-flip test tests whether the mean signed difference is zero. The implementation enumerates all sign assignments for at most 16 pairs and uses a seeded Monte Carlo sign-flip approximation with plus-one correction for larger samples, consistent with the permutation-testing framework of Good \cite{good2005}. The reported $p$ values are nominal, within-archive diagnostics without multiplicity correction across noise levels, metrics, and baselines; they are not familywise claims of general robustness. The formal study therefore does not use a normality assumption for the paired difference.
+For each method and noise level, we report the mean and a percentile bootstrap 95\% confidence interval over 240 method records. For each paired metric, the confidence interval is computed from 10,000 resamples of the 240 paired differences, following standard nonparametric resampling logic. The two-sided paired sign-flip test tests whether the mean signed difference is zero. The implementation enumerates all sign assignments for at most 16 pairs and uses a seeded Monte Carlo sign-flip approximation with plus-one correction for larger samples, consistent with the permutation-testing framework of Good \cite{good2005}. The reported $p$ values are nominal, within-archive diagnostics without multiplicity correction across noise levels, metrics, and baselines; they are not familywise claims of general robustness. The formal study therefore does not use a normality assumption for the paired difference.
 
 We report effect sizes, confidence intervals, and test values together. A small $p$ value is not presented as proof of practical importance, and a confidence interval crossing zero is not presented as proof of equivalence. The high-noise safety increase is retained even though the progress effect is also positive. The study has four noise levels and several metrics; the results are interpreted as a prespecified sensitivity profile rather than as a claim of universal robustness.
 
